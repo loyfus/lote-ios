@@ -1,0 +1,40 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: iOS test suite
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # O .xcodeproj é gerado: project.yml é a fonte, o projeto é saída.
+      # XcodeGen já vem no runner; instala se faltar.
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null; then brew install xcodegen; fi
+          xcodegen --version
+
+      - name: Generate project
+        run: xcodegen generate
+
+      - name: Run tests
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project Loyfus.xcodeproj \
+            -scheme Loyfus \
+            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ios-test-results
+          path: $HOME/Library/Developer/Xcode/DerivedData/**/Logs/Test
+          if-no-files-found: ignore
