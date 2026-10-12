@@ -1,13 +1,11 @@
 import SwiftUI
 
-/// The three tabs of the app, each with a navigation stack of its own so that what
-/// the user was doing in one is still there when they come back to it.
+/// The three tabs of the app, each with a navigation stack of its own so what the user
+/// was doing in one is still there on return.
 ///
-/// The tab bar is the system's: on iOS 26 it is the floating glass bar, before that
-/// the standard one, and either way the app's identity is in what it shows, not in
-/// the chrome. Explore and Saved have no navigation bar: their headers are content.
-/// Home has one, in the hero's night blue, because that is what carries the brand and
-/// keeps the status bar legible over it.
+/// The tab bar is the system's: on iOS 26 the floating glass bar, before that the standard
+/// one. Explore and Saved have no navigation bar — their headers are content. Home has one, in
+/// the hero's night blue, because that is what carries the brand.
 struct RootView: View {
     @Environment(AppStore.self) private var store
     @Environment(Router.self) private var router

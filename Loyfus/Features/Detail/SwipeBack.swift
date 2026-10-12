@@ -1,14 +1,11 @@
 import SwiftUI
 import UIKit
 
-/// Keeps the swipe from the left edge working on a screen that has no system back
-/// button.
-///
-/// UIKit turns the interactive pop gesture off for a pushed screen whose bar has been
-/// hidden or whose back button has been replaced, and the detail screen draws its own
-/// controls over the photograph. This restores it: the gesture is handed to a
-/// delegate that allows it whenever there is a screen to go back to, which is the
-/// only condition UIKit's own delegate was there to check.
+/// Keeps the swipe from the left edge working on a screen that has no system back button.
+/// UIKit turns the interactive pop gesture off for a pushed screen whose bar was hidden or
+/// whose back button was replaced, and the detail screen draws its own controls over the
+/// photograph. This hands it to a delegate that allows it whenever there is a screen to go
+/// back to — the only condition UIKit's own delegate was there to check.
 struct SwipeBackEnabler: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> Holder { Holder() }
 

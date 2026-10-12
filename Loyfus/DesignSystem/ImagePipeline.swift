@@ -1,19 +1,14 @@
 import UIKit
 import ImageIO
 
-/// Loads, decodes and remembers photographs.
+/// Loads, decodes and remembers photographs. A photo-first app lives or dies by what happens
+/// when a cell scrolls back into view, and `AsyncImage` goes back to the network every time —
+/// the shared `URLCache` caps entries at 5% of 10 MB and the catalogue's photos (~870 KB) never
+/// fit under that.
 ///
-/// A photo-first app lives or dies by what happens when a cell scrolls back into view.
-/// `AsyncImage` goes back to the network every time: it uses the shared `URLCache`,
-/// whose entries are capped at 5% of a 10 MB disk, and the catalogue's photos
-/// (~870 KB, 1280 px) never fit under that. Hence this pipeline:
-///
-///  - a `URLCache` of 64 MB in memory and 256 MB on disk, large enough to hold the
-///    photos the HTTP headers already declare cacheable for a year;
-///  - an `NSCache` of decoded bitmaps already reduced to what the screen shows, so a
-///    cell that returns draws at once, without decoding anything;
-///  - one download per photo and size however many cells ask for it, cancelled when
-///    the last of them goes away.
+/// So: a `URLCache` of 64 MB in memory and 256 MB on disk, an `NSCache` of bitmaps already
+/// reduced to what the screen shows, and one download per photo and size however many cells
+/// ask for it, cancelled when the last one goes away.
 final class ImagePipeline: @unchecked Sendable {
     static let shared = ImagePipeline()
 

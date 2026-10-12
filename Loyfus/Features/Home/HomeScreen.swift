@@ -1,10 +1,8 @@
 import SwiftUI
 
-/// Home is the door of the catalogue: a hero that says who this is and hands over to
-/// search in one tap, the categories as frosted shortcuts, one notice it can take
-/// back, and then a sheet that says what is true right now (how fresh the catalogue
-/// is, what is closing, who takes an offer), what the reader might spend, and what
-/// the server picked. It is not a feed: browsing is Explore's job, and Home's job is
+/// Home is the door of the catalogue: a hero that says who this is and hands over to search in
+/// one tap, the categories as frosted shortcuts, one notice it can take back, and a sheet that
+/// says what is true right now. It is not a feed — browsing is Explore's job, and Home's job is
 /// the first screen of it.
 struct HomeScreen: View {
     @Environment(AppStore.self) private var store

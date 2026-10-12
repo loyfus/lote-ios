@@ -1,18 +1,14 @@
 import SwiftUI
 import UIKit
 
-// "Pregão": a night-blue ground that carries the brand (the hero of Home, its bar,
-// the icon), cool neutral paper so the photographs keep their own colour, and one
-// amber accent for "act now" (the CTA, urgency, the favourite, the selected tab).
-// Pine marks what is alive and positive. No other hue is allowed in text.
+// "Pregão": a night-blue ground that carries the brand, cool neutral paper so photographs
+// keep their own colour, one amber accent for "act now", pine for what is alive. No other
+// hue in text. Amber comes in two strengths because a fill is not a text colour: `amber` is
+// the fill and carries `onAmber`, `amberText` is dark enough to write on paper — the fill
+// itself measures 1.88:1 there.
 //
-// Amber comes in two strengths because a fill is not a text colour: `amber` is the
-// fill and always carries `onAmber`; `amberText` is the amber dark enough to write on
-// paper. The fill never writes on paper: it measures 1.88:1 there.
-//
-// Every colour is declared for both appearances. A dark theme is not an
-// inversion of the light one, so each role is restated rather than flipped;
-// the pair-by-pair contrast numbers live in .tools/ui_audit.py.
+// Every colour is declared for both appearances: a dark theme is not an inversion, so each
+// role is restated, not flipped. Contrast pairs live in ../backend/tools/ui_audit.py.
 enum Palette {
     static let ink = adaptive(0x0E1726, 0xEEF2F8)
     static let ink80 = adaptive(0x2F3A4B, 0xCBD3DF)
@@ -116,12 +112,10 @@ enum Radius {
     static let sheet: CGFloat = 24
 }
 
-// Motion budget. Only the necessary and never decorative: a press answers, content
-// arrives, a state changes in place, a lot opens from where it was. Every duration is
-// short enough that nothing waits for it: the state changes at once and the motion
-// only shows the change. The same numbers and curves as Android's Motion.kt.
-// With Reduce Motion on, nothing moves through space: slides, scales, pops and the
-// skeleton's pulse are left out, and what remains is a short fade.
+// Motion budget, the same numbers and curves as Android's Motion.kt. Only the necessary: a
+// press answers, content arrives, a lot opens from where it was, always short enough that the
+// state changes at once and the motion only shows it. With Reduce Motion on nothing moves
+// through space — slides, scales, pops and the pulse are left out, not squeezed.
 enum Motion {
     /// A press going in: the answer has to start under the finger.
     static let pressIn: Double = 0.10

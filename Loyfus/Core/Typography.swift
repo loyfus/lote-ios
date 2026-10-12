@@ -1,15 +1,11 @@
 import SwiftUI
 
-// Bricolage Grotesque carries identity and titles; Inter Tight carries interface
-// and figures. Both are registered as static instances, one file per weight,
-// shared byte-for-byte with Android: a variable file renders its default
-// instance where axes cannot be pinned, and the old Fraunces file defaulted to
-// 9pt Black, so iOS drew every serif title Black while Android pinned per-weight.
+// Bricolage Grotesque carries identity and titles, Inter Tight interface and figures. Both are
+// static instances, one file per weight, shared byte-for-byte with Android: a variable file
+// renders its default instance where axes cannot be pinned.
 //
-// A role is a size, a weight, a tracking and a line box. Every size is declared
-// relative to a text style, so the whole app follows the user's Dynamic Type
-// setting instead of ignoring it (WCAG 1.4.4). Nothing in the app is set in
-// capitals or with letter-spacing except the LOYFUS wordmark.
+// A role is a size, a weight, a tracking and a line box, each size declared relative to a text
+// style so the app follows the user's Dynamic Type setting (WCAG 1.4.4).
 struct TypeRole {
     enum Face {
         case display, ui

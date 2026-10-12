@@ -1,16 +1,12 @@
 import Foundation
 
-/// The cleanup every app applies when it DISPLAYS a lot title. The catalogue's title
-/// comes from the auctioneer: 76% in capitals, 28% with "(Ref.: 53137)", 5% with
-/// " | " between the title and an address. The API keeps delivering the raw text
-/// (the source of truth); the presentation lives in the client.
+/// The cleanup every app applies when it DISPLAYS a lot title. The catalogue's title comes
+/// from the auctioneer (76% in capitals, 28% with "(Ref.: 53137)") and the API keeps delivering
+/// it raw — the source of truth; the presentation lives in the client.
 ///
-/// This is a port of docs/design-v3/tidy_title.py, which is the reference, and it is
-/// tested against the 1,566 real titles of docs/design-v3/tidy_title_golden.tsv.
-/// Where Python and Swift disagree about what a character is, the port follows
-/// Python: it works on Unicode scalars (Python's code points, not Swift's
-/// grapheme clusters) and asks the Unicode properties for what `str.isalpha`,
-/// `isupper` and `isdigit` ask for.
+/// A port of backend/docs/design-v3/tidy_title.py, tested against its 1,566 golden titles.
+/// Where Python and Swift disagree about what a character is, the port follows Python: it
+/// works on Unicode scalars, not Swift's grapheme clusters.
 enum TitleTidy {
     struct Result: Equatable {
         let headline: String
@@ -263,12 +259,10 @@ enum TitleTidy {
 
     private static let stripped: Set<Unicode.Scalar> = [" ", ",", "-", "–"]
 
-    /// `strip(" ,-–")`.
     private static func strip(_ text: String) -> String {
         trim(text) { stripped.contains($0) }
     }
 
-    /// `strip()`.
     private static func trimWhitespace(_ text: String) -> String {
         trim(text, where: isWhitespace)
     }

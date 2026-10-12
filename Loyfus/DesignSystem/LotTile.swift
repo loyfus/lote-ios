@@ -1,12 +1,11 @@
 import SwiftUI
 
-/// A lot as a vitrine shows it: the photograph first, then three lines. No frame,
-/// no background, no category, no status; the photo and the space around it do the
-/// separating, and only the exceptional earns a badge.
+/// A lot as a vitrine shows it: the photograph first, then three lines. No frame, no
+/// background, no category, no status — the photo and the space around it do the separating,
+/// and only the exceptional earns a badge.
 ///
-/// The whole tile is one button with one spoken label. The heart is a button of its
-/// own beside it, not inside it: a control nested in another control cannot be
-/// reached by a screen reader.
+/// The whole tile is one button with one spoken label. The heart is a button beside it, not
+/// inside it: a control nested in another cannot be reached by a screen reader.
 struct LotTile: View {
     enum Variant {
         /// A rail on Home: 256 wide, 3:2.

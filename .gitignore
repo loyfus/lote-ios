@@ -1,10 +1,17 @@
 # Build
 build/
 DerivedData/
+.build/
 Pods/
 *.xcuserstate
 xcuserdata/
 Loyfus.xcodeproj/xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+
+# Ferramentas de apoio
+.swiftpm/
+.vagrant/
 
 # macOS
 .DS_Store

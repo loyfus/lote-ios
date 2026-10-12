@@ -1,12 +1,11 @@
 import SwiftUI
 
-/// What a photo plate draws: the photograph, never cropped, on a blurred copy of
-/// itself. Seller banners and watermarks are part of the listing, and cutting them
-/// produced plates that read as broken images; fitting the picture leaves bars,
-/// and the bars are filled with its own colours instead of an empty grey.
+/// The photograph, never cropped, on a blurred copy of itself. Seller banners and watermarks are
+/// part of the listing and cutting them produced plates that read as broken images; fitting
+/// leaves bars, filled with its own colours rather than an empty grey.
 ///
-/// The copy is the same decoded bitmap, so it costs no download and no second
-/// decode, and it is left out when the picture already fills the plate.
+/// The copy is the same decoded bitmap, so it costs no download and no second decode, and it is
+/// left out when the picture already fills the plate.
 struct PhotoCanvas: View {
     enum Mode {
         /// The whole picture, on a blurred copy of itself.

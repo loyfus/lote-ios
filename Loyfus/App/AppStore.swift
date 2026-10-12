@@ -2,9 +2,10 @@ import Foundation
 import Observation
 
 enum AppConfig {
-    // A physical device cannot use localhost: on the phone 127.0.0.1 is the
-    // phone itself, so it has to reach the Mac over the LAN address below.
-    static let apiBaseURL = "http://192.168.1.214:8080"
+    // The simulator reaches the Mac at 127.0.0.1. A physical device cannot: there,
+    // 127.0.0.1 is the phone itself, so it has to reach the Mac over the LAN --
+    // point this at http://<ip-do-mac>:8080 before building onto a device.
+    static let apiBaseURL = "http://127.0.0.1:8080"
 }
 
 enum DeviceIdentity {

@@ -1,11 +1,10 @@
 import SwiftUI
 
-/// The badge on a photograph: the time left, or the one word that says what is
-/// unusual about the lot ("Venda direta", "Encerrado"). Decorative to a screen
-/// reader, because the tile's label already says it.
+/// The badge on a photograph: the time left, or the one word that says what is unusual
+/// ("Venda direta", "Encerrado"). Decorative to a screen reader — the tile's label says it.
 ///
-/// It sits on the scrim so white text holds its contrast over any photograph. Only
-/// an urgent lot (under 24 hours) trades it for amber.
+/// It sits on the scrim so white text holds contrast over any photograph; only a lot under 24
+/// hours trades the scrim for amber.
 struct TimeChip: View {
     let chip: LotDisplay.Chip
 

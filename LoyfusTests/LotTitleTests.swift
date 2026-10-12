@@ -74,17 +74,22 @@ final class LotTitleTests: XCTestCase {
 
     // MARK: golden
 
-    /// The repository root, found from this file's own path: the tests run in a
-    /// simulator process that shares the host's filesystem.
-    private var repositoryRoot: URL {
-        URL(fileURLWithPath: #filePath)
+    /// The golden table is owned by the backend repo, which sits beside this one. Found from
+    /// this file's own path: the tests run in a simulator process sharing the host filesystem.
+    private var goldenFile: URL {
+        let relative = "docs/design-v3/tidy_title_golden.tsv"
+        let workspace = URL(fileURLWithPath: #filePath)
             .deletingLastPathComponent()  // LoyfusTests
             .deletingLastPathComponent()  // ios
-            .deletingLastPathComponent()  // repository root
+        let candidates = [
+            workspace.deletingLastPathComponent().appendingPathComponent("backend/" + relative),
+            workspace.appendingPathComponent(relative),
+        ]
+        return candidates.first { FileManager.default.fileExists(atPath: $0.path) } ?? candidates[0]
     }
 
     func testEveryRealTitleOfTheGoldenTableComesOutExactlyAsTheReferenceMadeIt() throws {
-        let golden = repositoryRoot.appendingPathComponent("docs/design-v3/tidy_title_golden.tsv")
+        let golden = goldenFile
         guard FileManager.default.fileExists(atPath: golden.path) else {
             XCTFail("The golden table is missing: expected \(golden.path). The title cleanup cannot be verified without it.")
             return
