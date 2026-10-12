@@ -15,10 +15,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BC72F3775C8D77F78DE6899D"
-               BuildableName = "Loyfus.app"
-               BlueprintName = "Loyfus"
-               ReferencedContainer = "container:Loyfus.xcodeproj">
+               BlueprintIdentifier = "35A3B7CD323AF7636E90CD68"
+               BuildableName = "Lote.app"
+               BlueprintName = "Lote"
+               ReferencedContainer = "container:Lote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,10 +29,10 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C182908E7E389B0F1561B1E"
-               BuildableName = "LoyfusTests.xctest"
-               BlueprintName = "LoyfusTests"
-               ReferencedContainer = "container:Loyfus.xcodeproj">
+               BlueprintIdentifier = "ECB1DC56BF0EBF50060329F4"
+               BuildableName = "LoteTests.xctest"
+               BlueprintName = "LoteTests"
+               ReferencedContainer = "container:Lote.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,10 +46,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC72F3775C8D77F78DE6899D"
-            BuildableName = "Loyfus.app"
-            BlueprintName = "Loyfus"
-            ReferencedContainer = "container:Loyfus.xcodeproj">
+            BlueprintIdentifier = "35A3B7CD323AF7636E90CD68"
+            BuildableName = "Lote.app"
+            BlueprintName = "Lote"
+            ReferencedContainer = "container:Lote.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -58,10 +58,10 @@
             parallelizable = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5C182908E7E389B0F1561B1E"
-               BuildableName = "LoyfusTests.xctest"
-               BlueprintName = "LoyfusTests"
-               ReferencedContainer = "container:Loyfus.xcodeproj">
+               BlueprintIdentifier = "ECB1DC56BF0EBF50060329F4"
+               BuildableName = "LoteTests.xctest"
+               BlueprintName = "LoteTests"
+               ReferencedContainer = "container:Lote.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -82,10 +82,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC72F3775C8D77F78DE6899D"
-            BuildableName = "Loyfus.app"
-            BlueprintName = "Loyfus"
-            ReferencedContainer = "container:Loyfus.xcodeproj">
+            BlueprintIdentifier = "35A3B7CD323AF7636E90CD68"
+            BuildableName = "Lote.app"
+            BlueprintName = "Lote"
+            ReferencedContainer = "container:Lote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <CommandLineArguments>
@@ -101,10 +101,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BC72F3775C8D77F78DE6899D"
-            BuildableName = "Loyfus.app"
-            BlueprintName = "Loyfus"
-            ReferencedContainer = "container:Loyfus.xcodeproj">
+            BlueprintIdentifier = "35A3B7CD323AF7636E90CD68"
+            BuildableName = "Lote.app"
+            BlueprintName = "Lote"
+            ReferencedContainer = "container:Lote.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

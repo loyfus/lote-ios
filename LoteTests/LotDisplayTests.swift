@@ -1,5 +1,5 @@
 import XCTest
-@testable import Loyfus
+@testable import Lote
 
 /// What a tile prints about a lot, and how a lot is classified. Lots are built from
 /// JSON the way the API sends them (null values simply absent), so the same tests

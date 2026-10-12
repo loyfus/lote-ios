@@ -72,7 +72,7 @@ struct AboutSheet: View {
             ScrollView {
                 VStack(alignment: .leading, spacing: Space.xl) {
                     group("Como funciona", [
-                        "O Loyfus reúne lotes de leilões e vendas diretas do Brasil.",
+                        "O Lote reúne lotes de leilões e vendas diretas do Brasil.",
                         "O lance, a compra e o pagamento acontecem no site do leiloeiro.",
                         "Os valores são lidos de tempos em tempos; confirme no site antes de ofertar.",
                     ])
@@ -88,7 +88,7 @@ struct AboutSheet: View {
                 .padding(.bottom, Space.xxl)
             }
             .background(Palette.paper)
-            .navigationTitle("Sobre o Loyfus")
+            .navigationTitle("Sobre o Lote")
             .navigationBarTitleDisplayMode(.inline)
             .tint(Palette.amberText)
         }

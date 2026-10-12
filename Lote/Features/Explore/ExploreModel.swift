@@ -40,7 +40,7 @@ struct ExploreFilters: Equatable {
 /// The last searches typed on this device. Local only; never sent anywhere.
 struct RecentSearches {
     static let limit = 8
-    private static let key = "loyfus.recentSearches"
+    private static let key = "lote.recentSearches"
 
     private let defaults: UserDefaults
 
@@ -87,7 +87,7 @@ final class ExploreModel {
     /// Set by Home's search field: Explore takes the keyboard when it appears.
     var wantsSearchFocus = false
 
-    private let repository: LoyfusRepository
+    private let repository: LoteRepository
     private let recentStore: RecentSearches
     private var nextPage = 0
     private var generation = 0
@@ -100,7 +100,7 @@ final class ExploreModel {
     static let pageSize = 24
     static let debounce: Duration = .milliseconds(320)
 
-    init(repository: LoyfusRepository, recents: RecentSearches = RecentSearches()) {
+    init(repository: LoteRepository, recents: RecentSearches = RecentSearches()) {
         self.repository = repository
         recentStore = recents
         self.recents = recents.all

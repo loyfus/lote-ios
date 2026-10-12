@@ -32,7 +32,7 @@ enum LoadFailure {
     }
 }
 
-struct LoyfusAPI {
+struct LoteAPI {
     let baseURL: URL
     let deviceId: String
 
@@ -79,8 +79,8 @@ struct LoyfusAPI {
     }
 }
 
-struct LoyfusRepository {
-    let api: LoyfusAPI
+struct LoteRepository {
+    let api: LoteAPI
 
     func home() async throws -> HomeResponse { try await api.get("api/v1/home") }
 

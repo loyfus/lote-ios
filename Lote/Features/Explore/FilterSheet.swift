@@ -7,7 +7,7 @@ import SwiftUI
 struct FilterSheet: View {
     @Environment(\.dismiss) private var dismiss
 
-    let repository: LoyfusRepository
+    let repository: LoteRepository
     /// The search and the category are not edited here but narrow the count, so
     /// "Mostrar N lotes" is the number the grid will actually show.
     let search: String
@@ -20,7 +20,7 @@ struct FilterSheet: View {
     @FocusState private var focusedBound: PriceBound?
 
     init(
-        repository: LoyfusRepository, search: String, category: String?, initial: ExploreFilters,
+        repository: LoteRepository, search: String, category: String?, initial: ExploreFilters,
         onApply: @escaping (ExploreFilters) -> Void
     ) {
         self.repository = repository

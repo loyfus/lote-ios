@@ -163,7 +163,7 @@ struct NoticeBanner: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(PressStyle(press: .surface))
-            .accessibilityLabel("Como funciona. Abrir sobre o Loyfus")
+            .accessibilityLabel("Como funciona. Abrir sobre o Lote")
 
             Button(action: onDismiss) {
                 Image(systemName: "xmark")

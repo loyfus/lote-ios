@@ -1,23 +1,23 @@
-name: Loyfus
+name: Lote
 options:
-  bundleIdPrefix: br.com.loyfus
+  bundleIdPrefix: br.com.lote
   deploymentTarget:
     iOS: "17.0"
   createIntermediateGroups: true
   groupSortPosition: top
 
 schemes:
-  Loyfus:
+  Lote:
     build:
       targets:
-        Loyfus: all
-        LoyfusTests: [test]
+        Lote: all
+        LoteTests: [test]
     run:
       config: Debug
     test:
       config: Debug
       targets:
-        - LoyfusTests
+        - LoteTests
 
 settings:
   base:
@@ -28,30 +28,30 @@ settings:
     ENABLE_USER_SCRIPT_SANDBOXING: "YES"
 
 targets:
-  Loyfus:
+  Lote:
     type: application
     platform: iOS
     sources:
-      - path: Loyfus
+      - path: Lote
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: br.com.loyfus
+        PRODUCT_BUNDLE_IDENTIFIER: br.com.lote
         MARKETING_VERSION: "1.0.0"
         CURRENT_PROJECT_VERSION: "1"
-        INFOPLIST_FILE: Loyfus/Info.plist
+        INFOPLIST_FILE: Lote/Info.plist
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         TARGETED_DEVICE_FAMILY: "1,2"
         GENERATE_INFOPLIST_FILE: "NO"
         SWIFT_STRICT_CONCURRENCY: minimal
     info:
-      path: Loyfus/Info.plist
+      path: Lote/Info.plist
       properties:
-        CFBundleDisplayName: Loyfus
+        CFBundleDisplayName: Lote
         CFBundleURLTypes:
-          - CFBundleURLName: br.com.loyfus
+          - CFBundleURLName: br.com.lote
             CFBundleURLSchemes:
-              - loyfus
+              - lote
         # Paper in light, the near-black ground in dark: the launch frame matches the first
         # frame the app draws, so nothing flashes white at a dark-mode user.
         UILaunchScreen:
@@ -83,16 +83,16 @@ targets:
           NSAllowsLocalNetworking: true
         # On a physical device the catalogue is served from a machine on the local
         # network (AppConfig.apiBaseURL); iOS asks the reader once, with this text.
-        NSLocalNetworkUsageDescription: O Loyfus busca o catálogo de leilões em um servidor na sua rede local.
+        NSLocalNetworkUsageDescription: O Lote busca o catálogo de leilões em um servidor na sua rede local.
 
-  LoyfusTests:
+  LoteTests:
     type: bundle.unit-test
     platform: iOS
     sources:
-      - path: LoyfusTests
+      - path: LoteTests
     dependencies:
-      - target: Loyfus
+      - target: Lote
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: br.com.loyfus.tests
+        PRODUCT_BUNDLE_IDENTIFIER: br.com.lote.tests
         GENERATE_INFOPLIST_FILE: "YES"

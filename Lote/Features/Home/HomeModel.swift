@@ -25,10 +25,10 @@ final class HomeModel {
     private(set) var closing: HomeResponse.ClosingWindow?
     private(set) var acceptsProposal: Int = 0
 
-    private let repository: LoyfusRepository
+    private let repository: LoteRepository
     private var loadTask: Task<Void, Never>?
 
-    init(repository: LoyfusRepository) {
+    init(repository: LoteRepository) {
         self.repository = repository
     }
 

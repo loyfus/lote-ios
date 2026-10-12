@@ -1,5 +1,5 @@
 import XCTest
-@testable import Loyfus
+@testable import Lote
 
 /// The strings a reader actually sees, with the vectors of docs/DESIGN_SYSTEM.md §4.
 /// The Android client is tested against the same table: a difference between the

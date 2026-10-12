@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>pt_BR</string>
 	<key>CFBundleDisplayName</key>
-	<string>Loyfus</string>
+	<string>Lote</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,10 +26,10 @@
 	<array>
 		<dict>
 			<key>CFBundleURLName</key>
-			<string>br.com.loyfus</string>
+			<string>br.com.lote</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>loyfus</string>
+				<string>lote</string>
 			</array>
 		</dict>
 	</array>
@@ -41,7 +41,7 @@
 		<true/>
 	</dict>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>O Loyfus busca o catálogo de leilões em um servidor na sua rede local.</string>
+	<string>O Lote busca o catálogo de leilões em um servidor na sua rede local.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Bricolage-Regular.ttf</string>

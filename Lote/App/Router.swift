@@ -23,12 +23,12 @@ final class Router {
     var explorePath: [Route] = []
     var savedPath: [Route] = []
 
-    /// UI smoke-test hook: `LOYFUS_START_SCREEN` is how the screenshots of the audit
+    /// UI smoke-test hook: `LOTE_START_SCREEN` is how the screenshots of the audit
     /// are taken. `home`, `explore`, `saved`, `settings` or `lot/<id>` lands straight there. It is
     /// read here, in the initializer, because SwiftUI may build the app's state more
     /// than once and keep only one copy: whichever it keeps must start in the right place.
     init(environment: [String: String] = ProcessInfo.processInfo.environment) {
-        guard let screen = environment["LOYFUS_START_SCREEN"] else { return }
+        guard let screen = environment["LOTE_START_SCREEN"] else { return }
         switch screen {
         case "explore": tab = .explore
         case "saved": tab = .saved
@@ -72,7 +72,7 @@ final class Router {
         }
     }
 
-    /// `loyfus://lot/<id>` opens a lot, `loyfus://explore` opens browse.
+    /// `lote://lot/<id>` opens a lot, `lote://explore` opens browse.
     func handle(_ url: URL) {
         switch url.host {
         case "lot":

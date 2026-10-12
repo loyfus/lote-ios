@@ -2,7 +2,7 @@ import SwiftUI
 import UIKit
 
 @main
-struct LoyfusApp: App {
+struct LoteApp: App {
     @State private var store: AppStore
     @State private var router = Router()
     @State private var home: HomeModel

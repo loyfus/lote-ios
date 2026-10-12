@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// The logotype: the gavel in amber and LOYFUS in Bricolage. The only text in the app set
+/// The logotype: the gavel in amber and LOTE in Bricolage. The only text in the app set
 /// in capitals. The amber is the brand here, not a call to act: it is the one place the
 /// accent stands for the name instead of for "now".
 struct Wordmark: View {
@@ -11,13 +11,13 @@ struct Wordmark: View {
             BrandMark()
                 .foregroundStyle(Palette.amber)
                 .frame(width: 20, height: 20)
-            Text("LOYFUS")
+            Text("LOTE")
                 .typeset(.wordmark)
                 .foregroundStyle(color)
         }
         .fixedSize()
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("Loyfus")
+        .accessibilityLabel("Lote")
         .accessibilityAddTraits(.isHeader)
     }
 }

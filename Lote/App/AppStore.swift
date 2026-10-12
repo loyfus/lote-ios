@@ -9,7 +9,7 @@ enum AppConfig {
 }
 
 enum DeviceIdentity {
-    private static let key = "loyfus.device.id"
+    private static let key = "lote.device.id"
 
     static var current: String {
         if let existing = UserDefaults.standard.string(forKey: key) { return existing }
@@ -31,7 +31,7 @@ enum LoadPhase: Equatable {
 /// have to agree, so the set of favourites lives here, above all of them.
 @MainActor @Observable
 final class AppStore {
-    let repository: LoyfusRepository
+    let repository: LoteRepository
 
     private(set) var categories: [Category] = []
 
@@ -65,13 +65,13 @@ final class AppStore {
         if refusal == shown { refusal = nil }
     }
 
-    init(repository: LoyfusRepository) {
+    init(repository: LoteRepository) {
         self.repository = repository
     }
 
     static func live() -> AppStore {
         let base = URL(string: AppConfig.apiBaseURL)!
-        return AppStore(repository: LoyfusRepository(api: LoyfusAPI(baseURL: base, deviceId: DeviceIdentity.current)))
+        return AppStore(repository: LoteRepository(api: LoteAPI(baseURL: base, deviceId: DeviceIdentity.current)))
     }
 
     func start() async {

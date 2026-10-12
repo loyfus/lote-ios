@@ -1,5 +1,5 @@
 import XCTest
-@testable import Loyfus
+@testable import Lote
 
 /// The title cleanup against its reference, docs/design-v3/tidy_title.py: first the
 /// vectors of that file, then the golden table of the 1,566 real titles the
@@ -79,7 +79,7 @@ final class LotTitleTests: XCTestCase {
     private var goldenFile: URL {
         let relative = "docs/design-v3/tidy_title_golden.tsv"
         let workspace = URL(fileURLWithPath: #filePath)
-            .deletingLastPathComponent()  // LoyfusTests
+            .deletingLastPathComponent()  // LoteTests
             .deletingLastPathComponent()  // ios
         let candidates = [
             workspace.deletingLastPathComponent().appendingPathComponent("backend/" + relative),

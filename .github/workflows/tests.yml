@@ -26,8 +26,8 @@ jobs:
         run: |
           set -o pipefail
           xcodebuild test \
-            -project Loyfus.xcodeproj \
-            -scheme Loyfus \
+            -project Lote.xcodeproj \
+            -scheme Lote \
             -destination 'platform=iOS Simulator,name=iPhone 17' \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO

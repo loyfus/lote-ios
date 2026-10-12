@@ -64,7 +64,7 @@ struct SettingsScreen: View {
             } header: {
                 header("Aparência")
             } footer: {
-                footer("No automático, o Loyfus acompanha o tema do aparelho.")
+                footer("No automático, o Lote acompanha o tema do aparelho.")
             }
 
             Section {
