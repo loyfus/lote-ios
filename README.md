@@ -57,7 +57,7 @@ O cliente HTTP, o cache de imagens e o parsing de JSON são ~200 linhas no total
 que fala com uma API que este próprio projeto publica, trazer um framework seria custo sem
 contrapartida.
 
-## A paridade com o Android é uma regra, não um acidente
+## Paridade com o Android
 
 Formatação de preço em pt-BR, contagem regressiva e limpeza de título existem **espelhadas**
 em Kotlin e em Swift. As duas implementações são testadas contra o mesmo golden de **1.566
