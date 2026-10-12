@@ -13,6 +13,7 @@
   <img alt="Swift" src="https://img.shields.io/badge/Swift-6-F05138?style=flat-square&logo=swift&logoColor=white">
   <img alt="SwiftUI" src="https://img.shields.io/badge/SwiftUI-iOS%2017%2B-0A84FF?style=flat-square&logo=swift&logoColor=white">
   <img alt="XcodeGen" src="https://img.shields.io/badge/XcodeGen-project.yml-8E8E93?style=flat-square&logo=xcode&logoColor=white">
+  <img alt="CI" src="https://github.com/loyfus/loyfus-ios/actions/workflows/tests.yml/badge.svg">
 </p>
 
 ---
@@ -127,6 +128,10 @@ com o mesmo contrato do Android.
 | UI | SwiftUI (sem UIKit, sem dependências) |
 | Persistência | `Codable` + `UserDefaults` / arquivos no container |
 | Build | XcodeGen · sem SPM, sem CocoaPods |
+
+## Licença
+
+MIT — [LICENSE](LICENSE).
 
 ---
 
