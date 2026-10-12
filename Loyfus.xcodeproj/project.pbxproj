@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D138C05FDDC1CF58B82E502 /* LotDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928829689522E685CCC297A9 /* LotDisplayTests.swift */; };
+		0E70186424F30B6CCA5B4126 /* Controls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B331AC3A88583398F3BCFF40 /* Controls.swift */; };
+		1B0D5F823039C93DCE4C9FF6 /* Wordmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8821872B5887BE220484195C /* Wordmark.swift */; };
+		1F5BEA56FA7E268B18EC8C2E /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE354D5E29E601A1F22B8D5 /* Typography.swift */; };
+		25103BF86016CBD63992AB72 /* HomeParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710ACA06EC1BA310582FCD4E /* HomeParts.swift */; };
+		26D91414B2E7DBDE6C28CC9C /* FormattersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360FFC6BD341FB05E21050F /* FormattersTests.swift */; };
+		2B6EDB8671F1FD11D97609D7 /* Glyph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5F62AB99941ABA07FED8B /* Glyph.swift */; };
+		2DBC17E16C36DDBF824894F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D794D87D6F7DE73B74CC26 /* Assets.xcassets */; };
+		38E118A2F264E1F8D6D0194B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E634D39EB2362545465540 /* Theme.swift */; };
+		403DF2D6657E21BE5D4C5626 /* PhotoPlate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774127BD1D0F43DFD347F22 /* PhotoPlate.swift */; };
+		42167AD4BE428B9912339BC9 /* LotTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255E21258D7F5D08BFBD669 /* LotTitle.swift */; };
+		45AE75F918EB12B36B77947D /* Bricolage-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 318A8BC8AFFFDB32D26E884C /* Bricolage-Bold.ttf */; };
+		4BE6351BF0F9DDE7D91D28D3 /* InterTight-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6ECCC52C1125E94620892EB /* InterTight-Bold.ttf */; };
+		4C556100AD47054973AAD95D /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD69B6B86694EA50B9C54EF /* Categories.swift */; };
+		533F4F73AC0E792C713F7373 /* SavedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CA359AAB9F267EAB2FCAAC /* SavedScreen.swift */; };
+		58840BAE7E6CC254941EF5A1 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EA5D6B96D0192BB16F75C5 /* RootView.swift */; };
+		5B779049D1A42FE1B1F387F5 /* Bricolage-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B15CEB094AC45D94060C0540 /* Bricolage-SemiBold.ttf */; };
+		63A3D196E50A2C19AA069157 /* ExploreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BDD63F81130905DF523991 /* ExploreModel.swift */; };
+		70CEB4AEFF6F9DD128BCDEFC /* SavedGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D57D33082C942C9F70B2173 /* SavedGroups.swift */; };
+		70E0E86E66A00CFC05A5A600 /* HomeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D9DA2DD84FED94F687409A6 /* HomeMenu.swift */; };
+		8D4B3548D55AEBFEA782A9BF /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE5815A51489FCC749E654D /* FlowLayout.swift */; };
+		9638FEA0EF969717C4D52EBE /* InterTight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6FC825906AECFD2A6F11D308 /* InterTight-Regular.ttf */; };
+		96662551F8EB1A7D5D5FB784 /* LoyfusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA915CDCC3A90E1260885BB1 /* LoyfusApp.swift */; };
+		98D89A7470C4464E2271C3D4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D753F2943F6596ADB29DE90 /* Router.swift */; };
+		9B22734370CB27F23DC264F9 /* DetailSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042948E4586659970B3D4D77 /* DetailSections.swift */; };
+		A22E3A967F6CABF0F89BE5C1 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB23EBFD3B889723923339E /* SettingsScreen.swift */; };
+		A96AA06A2CB9B8DFF7D2B10E /* Bricolage-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F03689AD70824D490B00A4EB /* Bricolage-Regular.ttf */; };
+		AC778A2F10C1ACD06FC42539 /* LotTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413388C5C3418A23E39AC1A6 /* LotTile.swift */; };
+		B49183472AD85437F873DE7D /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7346099048A9AB106351E964 /* StateViews.swift */; };
+		B8920C786B397DFDA685596D /* ExploreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CCA105B3C5B01DA22A4297 /* ExploreScreen.swift */; };
+		BA8AEE6E88E1807CE843A66E /* LotDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029A75133AA486AE3AA05695 /* LotDisplay.swift */; };
+		BF9E250F262198A4812AE0DF /* LoyfusAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D4597EA530216402985BC9 /* LoyfusAPI.swift */; };
+		C00655DA4ECE87FDD1C66F3E /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABADC426C0A81AE6170562FE /* HomeScreen.swift */; };
+		C92A8849FC2E83E9226F5880 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26AB401CB4D31D57B12587F /* Formatters.swift */; };
+		CBCC050F26C8D8C71E4BD635 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45EF2BFD6E31EA48BED68271 /* Models.swift */; };
+		D1AC8F3644A9B809AF872D0D /* InterTight-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 698C4FE81A6DA956EE57501F /* InterTight-Medium.ttf */; };
+		D736FBF4584E112D68D0835D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D5EDA1160D85A01F76EBCA /* Toast.swift */; };
+		D8B6B987F664D4CA0009E5A6 /* FilterSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D0BAF8DEC21F1C6B947CED /* FilterSheet.swift */; };
+		E080A2738F1B5BEF06AEB115 /* PhotoBadges.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547880D4A412088C7AA32B1 /* PhotoBadges.swift */; };
+		E33B17E41B97A3D2FD5F66A6 /* Bricolage-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E842570CF1731095F9E3C85B /* Bricolage-Medium.ttf */; };
+		E9A52751E86D3C98F1F0AF68 /* SwipeBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23329CF32E95D070B6AA4F55 /* SwipeBack.swift */; };
+		E9BAEE51ACDE8E2FA7211C82 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1D44C83C8822B8559C3EBA /* AppStore.swift */; };
+		EDD476A48128F31EC48E5563 /* LotTitleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881EAC3C736E81BFACAE930F /* LotTitleTests.swift */; };
+		EF60FE6BCB92D308FE66EC44 /* InterTight-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D8A33520DEBCFC600FB0F59 /* InterTight-SemiBold.ttf */; };
+		F10DC5C70AD08AD341E1AC97 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65345CBEFFA8C445B81D7E74 /* Buttons.swift */; };
+		F147FEC6200121EB612830D3 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B49C36F5E733E908327F193 /* HomeModel.swift */; };
+		F56B261D0F7DB51B253CD458 /* DetailContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D526C337948BE0A5F0D60 /* DetailContent.swift */; };
+		F6525C016FBC07E9B9BEA61F /* ImagePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D6537F6AA01770C2E9797D /* ImagePipeline.swift */; };
+		FD9160DF37B0288059788938 /* DetailGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F80B87ECBF975D26221C62 /* DetailGallery.swift */; };
+		FE8E5DD69FF443F7C95827B3 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76B2249239C748BAC485D0 /* DetailScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2727126C8FB7190B93FBAF2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33356716A86AF97B30C3EFD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC72F3775C8D77F78DE6899D;
+			remoteInfo = Loyfus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00BDD63F81130905DF523991 /* ExploreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreModel.swift; sourceTree = "<group>"; };
+		029A75133AA486AE3AA05695 /* LotDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotDisplay.swift; sourceTree = "<group>"; };
+		042948E4586659970B3D4D77 /* DetailSections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSections.swift; sourceTree = "<group>"; };
+		22EA5D6B96D0192BB16F75C5 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		23329CF32E95D070B6AA4F55 /* SwipeBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeBack.swift; sourceTree = "<group>"; };
+		318A8BC8AFFFDB32D26E884C /* Bricolage-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bricolage-Bold.ttf"; sourceTree = "<group>"; };
+		3FD452ABC9A007A572409608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		413388C5C3418A23E39AC1A6 /* LotTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotTile.swift; sourceTree = "<group>"; };
+		45EF2BFD6E31EA48BED68271 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		46D6537F6AA01770C2E9797D /* ImagePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePipeline.swift; sourceTree = "<group>"; };
+		4AE5815A51489FCC749E654D /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		4B49C36F5E733E908327F193 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		4D9DA2DD84FED94F687409A6 /* HomeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenu.swift; sourceTree = "<group>"; };
+		5D753F2943F6596ADB29DE90 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		65345CBEFFA8C445B81D7E74 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		698C4FE81A6DA956EE57501F /* InterTight-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterTight-Medium.ttf"; sourceTree = "<group>"; };
+		6B7D526C337948BE0A5F0D60 /* DetailContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContent.swift; sourceTree = "<group>"; };
+		6D57D33082C942C9F70B2173 /* SavedGroups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedGroups.swift; sourceTree = "<group>"; };
+		6D8A33520DEBCFC600FB0F59 /* InterTight-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterTight-SemiBold.ttf"; sourceTree = "<group>"; };
+		6F76B2249239C748BAC485D0 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		6FC825906AECFD2A6F11D308 /* InterTight-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterTight-Regular.ttf"; sourceTree = "<group>"; };
+		70D794D87D6F7DE73B74CC26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		710ACA06EC1BA310582FCD4E /* HomeParts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeParts.swift; sourceTree = "<group>"; };
+		7346099048A9AB106351E964 /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViews.swift; sourceTree = "<group>"; };
+		79D0BAF8DEC21F1C6B947CED /* FilterSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterSheet.swift; sourceTree = "<group>"; };
+		7AE354D5E29E601A1F22B8D5 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		85CCA105B3C5B01DA22A4297 /* ExploreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreen.swift; sourceTree = "<group>"; };
+		881EAC3C736E81BFACAE930F /* LotTitleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotTitleTests.swift; sourceTree = "<group>"; };
+		8821872B5887BE220484195C /* Wordmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wordmark.swift; sourceTree = "<group>"; };
+		8A7208A3BB66E63115DD6927 /* Loyfus.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Loyfus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B171A434ACE7812353BBC9C /* LoyfusTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = LoyfusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		928829689522E685CCC297A9 /* LotDisplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotDisplayTests.swift; sourceTree = "<group>"; };
+		9360FFC6BD341FB05E21050F /* FormattersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattersTests.swift; sourceTree = "<group>"; };
+		9AD69B6B86694EA50B9C54EF /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		A0E634D39EB2362545465540 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A0F80B87ECBF975D26221C62 /* DetailGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGallery.swift; sourceTree = "<group>"; };
+		A547880D4A412088C7AA32B1 /* PhotoBadges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBadges.swift; sourceTree = "<group>"; };
+		A774127BD1D0F43DFD347F22 /* PhotoPlate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPlate.swift; sourceTree = "<group>"; };
+		ABADC426C0A81AE6170562FE /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		ABB23EBFD3B889723923339E /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		AC1D44C83C8822B8559C3EBA /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		B15CEB094AC45D94060C0540 /* Bricolage-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bricolage-SemiBold.ttf"; sourceTree = "<group>"; };
+		B255E21258D7F5D08BFBD669 /* LotTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotTitle.swift; sourceTree = "<group>"; };
+		B2D5EDA1160D85A01F76EBCA /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		B331AC3A88583398F3BCFF40 /* Controls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controls.swift; sourceTree = "<group>"; };
+		BEC5F62AB99941ABA07FED8B /* Glyph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glyph.swift; sourceTree = "<group>"; };
+		C26AB401CB4D31D57B12587F /* Formatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		D6CA359AAB9F267EAB2FCAAC /* SavedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedScreen.swift; sourceTree = "<group>"; };
+		D7D4597EA530216402985BC9 /* LoyfusAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyfusAPI.swift; sourceTree = "<group>"; };
+		E842570CF1731095F9E3C85B /* Bricolage-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bricolage-Medium.ttf"; sourceTree = "<group>"; };
+		EA915CDCC3A90E1260885BB1 /* LoyfusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyfusApp.swift; sourceTree = "<group>"; };
+		F03689AD70824D490B00A4EB /* Bricolage-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bricolage-Regular.ttf"; sourceTree = "<group>"; };
+		F6ECCC52C1125E94620892EB /* InterTight-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InterTight-Bold.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		05089266C232993978F11594 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D7D4597EA530216402985BC9 /* LoyfusAPI.swift */,
+				45EF2BFD6E31EA48BED68271 /* Models.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		157911DBA112786BA33A6630 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2D41898A892DFE472560410A /* Detail */,
+				5838C90D54D98E14851B639C /* Explore */,
+				715C60277104E7C7D9CE9FAF /* Home */,
+				222408A0F97926B4038E31DA /* Saved */,
+				58CA2024290B547ED581119A /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		222408A0F97926B4038E31DA /* Saved */ = {
+			isa = PBXGroup;
+			children = (
+				6D57D33082C942C9F70B2173 /* SavedGroups.swift */,
+				D6CA359AAB9F267EAB2FCAAC /* SavedScreen.swift */,
+			);
+			path = Saved;
+			sourceTree = "<group>";
+		};
+		2D41898A892DFE472560410A /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D526C337948BE0A5F0D60 /* DetailContent.swift */,
+				A0F80B87ECBF975D26221C62 /* DetailGallery.swift */,
+				6F76B2249239C748BAC485D0 /* DetailScreen.swift */,
+				042948E4586659970B3D4D77 /* DetailSections.swift */,
+				23329CF32E95D070B6AA4F55 /* SwipeBack.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		332D3C511D6767BA2997365C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A7208A3BB66E63115DD6927 /* Loyfus.app */,
+				8B171A434ACE7812353BBC9C /* LoyfusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5838C90D54D98E14851B639C /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				00BDD63F81130905DF523991 /* ExploreModel.swift */,
+				85CCA105B3C5B01DA22A4297 /* ExploreScreen.swift */,
+				79D0BAF8DEC21F1C6B947CED /* FilterSheet.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		58CA2024290B547ED581119A /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				ABB23EBFD3B889723923339E /* SettingsScreen.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6D61E237CC8B74655A08BAB5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9AD69B6B86694EA50B9C54EF /* Categories.swift */,
+				C26AB401CB4D31D57B12587F /* Formatters.swift */,
+				029A75133AA486AE3AA05695 /* LotDisplay.swift */,
+				B255E21258D7F5D08BFBD669 /* LotTitle.swift */,
+				A0E634D39EB2362545465540 /* Theme.swift */,
+				7AE354D5E29E601A1F22B8D5 /* Typography.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		70B0DDE2CE9A4FF0AF1FF868 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				318A8BC8AFFFDB32D26E884C /* Bricolage-Bold.ttf */,
+				E842570CF1731095F9E3C85B /* Bricolage-Medium.ttf */,
+				F03689AD70824D490B00A4EB /* Bricolage-Regular.ttf */,
+				B15CEB094AC45D94060C0540 /* Bricolage-SemiBold.ttf */,
+				F6ECCC52C1125E94620892EB /* InterTight-Bold.ttf */,
+				698C4FE81A6DA956EE57501F /* InterTight-Medium.ttf */,
+				6FC825906AECFD2A6F11D308 /* InterTight-Regular.ttf */,
+				6D8A33520DEBCFC600FB0F59 /* InterTight-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		715C60277104E7C7D9CE9FAF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4D9DA2DD84FED94F687409A6 /* HomeMenu.swift */,
+				4B49C36F5E733E908327F193 /* HomeModel.swift */,
+				710ACA06EC1BA310582FCD4E /* HomeParts.swift */,
+				ABADC426C0A81AE6170562FE /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		75E7590B576C5207F786133D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AC1D44C83C8822B8559C3EBA /* AppStore.swift */,
+				EA915CDCC3A90E1260885BB1 /* LoyfusApp.swift */,
+				22EA5D6B96D0192BB16F75C5 /* RootView.swift */,
+				5D753F2943F6596ADB29DE90 /* Router.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BEFD2F96197FD85778D559A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				70B0DDE2CE9A4FF0AF1FF868 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C3D18CA2F87B21263D5C6252 = {
+			isa = PBXGroup;
+			children = (
+				F5237131C09F8C151313990B /* Loyfus */,
+				EE30F16D3EF0BF019169B32B /* LoyfusTests */,
+				332D3C511D6767BA2997365C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C78FA4A01AFFBB40CE3ED270 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				65345CBEFFA8C445B81D7E74 /* Buttons.swift */,
+				B331AC3A88583398F3BCFF40 /* Controls.swift */,
+				4AE5815A51489FCC749E654D /* FlowLayout.swift */,
+				BEC5F62AB99941ABA07FED8B /* Glyph.swift */,
+				46D6537F6AA01770C2E9797D /* ImagePipeline.swift */,
+				413388C5C3418A23E39AC1A6 /* LotTile.swift */,
+				A547880D4A412088C7AA32B1 /* PhotoBadges.swift */,
+				A774127BD1D0F43DFD347F22 /* PhotoPlate.swift */,
+				7346099048A9AB106351E964 /* StateViews.swift */,
+				B2D5EDA1160D85A01F76EBCA /* Toast.swift */,
+				8821872B5887BE220484195C /* Wordmark.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		EE30F16D3EF0BF019169B32B /* LoyfusTests */ = {
+			isa = PBXGroup;
+			children = (
+				9360FFC6BD341FB05E21050F /* FormattersTests.swift */,
+				928829689522E685CCC297A9 /* LotDisplayTests.swift */,
+				881EAC3C736E81BFACAE930F /* LotTitleTests.swift */,
+			);
+			path = LoyfusTests;
+			sourceTree = "<group>";
+		};
+		F5237131C09F8C151313990B /* Loyfus */ = {
+			isa = PBXGroup;
+			children = (
+				75E7590B576C5207F786133D /* App */,
+				6D61E237CC8B74655A08BAB5 /* Core */,
+				05089266C232993978F11594 /* Data */,
+				C78FA4A01AFFBB40CE3ED270 /* DesignSystem */,
+				157911DBA112786BA33A6630 /* Features */,
+				BEFD2F96197FD85778D559A1 /* Resources */,
+				70D794D87D6F7DE73B74CC26 /* Assets.xcassets */,
+				3FD452ABC9A007A572409608 /* Info.plist */,
+			);
+			path = Loyfus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5C182908E7E389B0F1561B1E /* LoyfusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD498AE159FB341F117C6D58 /* Build configuration list for PBXNativeTarget "LoyfusTests" */;
+			buildPhases = (
+				328C388597C488043AAC37E0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62ADD3C66FA0839B3609852E /* PBXTargetDependency */,
+			);
+			name = LoyfusTests;
+			packageProductDependencies = (
+			);
+			productName = LoyfusTests;
+			productReference = 8B171A434ACE7812353BBC9C /* LoyfusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC72F3775C8D77F78DE6899D /* Loyfus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2051FE854FEB3E8CEAB65EFE /* Build configuration list for PBXNativeTarget "Loyfus" */;
+			buildPhases = (
+				4D45CEC97B3F7338EC96F238 /* Sources */,
+				220B8B12835A9A9CC9C8742E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Loyfus;
+			packageProductDependencies = (
+			);
+			productName = Loyfus;
+			productReference = 8A7208A3BB66E63115DD6927 /* Loyfus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33356716A86AF97B30C3EFD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5C182908E7E389B0F1561B1E = {
+						DevelopmentTeam = "";
+					};
+					BC72F3775C8D77F78DE6899D = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = C472D2C7C09C837D0B1C60AE /* Build configuration list for PBXProject "Loyfus" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = C3D18CA2F87B21263D5C6252;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 332D3C511D6767BA2997365C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC72F3775C8D77F78DE6899D /* Loyfus */,
+				5C182908E7E389B0F1561B1E /* LoyfusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		220B8B12835A9A9CC9C8742E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DBC17E16C36DDBF824894F3 /* Assets.xcassets in Resources */,
+				45AE75F918EB12B36B77947D /* Bricolage-Bold.ttf in Resources */,
+				E33B17E41B97A3D2FD5F66A6 /* Bricolage-Medium.ttf in Resources */,
+				A96AA06A2CB9B8DFF7D2B10E /* Bricolage-Regular.ttf in Resources */,
+				5B779049D1A42FE1B1F387F5 /* Bricolage-SemiBold.ttf in Resources */,
+				4BE6351BF0F9DDE7D91D28D3 /* InterTight-Bold.ttf in Resources */,
+				D1AC8F3644A9B809AF872D0D /* InterTight-Medium.ttf in Resources */,
+				9638FEA0EF969717C4D52EBE /* InterTight-Regular.ttf in Resources */,
+				EF60FE6BCB92D308FE66EC44 /* InterTight-SemiBold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		328C388597C488043AAC37E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26D91414B2E7DBDE6C28CC9C /* FormattersTests.swift in Sources */,
+				0D138C05FDDC1CF58B82E502 /* LotDisplayTests.swift in Sources */,
+				EDD476A48128F31EC48E5563 /* LotTitleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D45CEC97B3F7338EC96F238 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BAEE51ACDE8E2FA7211C82 /* AppStore.swift in Sources */,
+				F10DC5C70AD08AD341E1AC97 /* Buttons.swift in Sources */,
+				4C556100AD47054973AAD95D /* Categories.swift in Sources */,
+				0E70186424F30B6CCA5B4126 /* Controls.swift in Sources */,
+				F56B261D0F7DB51B253CD458 /* DetailContent.swift in Sources */,
+				FD9160DF37B0288059788938 /* DetailGallery.swift in Sources */,
+				FE8E5DD69FF443F7C95827B3 /* DetailScreen.swift in Sources */,
+				9B22734370CB27F23DC264F9 /* DetailSections.swift in Sources */,
+				63A3D196E50A2C19AA069157 /* ExploreModel.swift in Sources */,
+				B8920C786B397DFDA685596D /* ExploreScreen.swift in Sources */,
+				D8B6B987F664D4CA0009E5A6 /* FilterSheet.swift in Sources */,
+				8D4B3548D55AEBFEA782A9BF /* FlowLayout.swift in Sources */,
+				C92A8849FC2E83E9226F5880 /* Formatters.swift in Sources */,
+				2B6EDB8671F1FD11D97609D7 /* Glyph.swift in Sources */,
+				70E0E86E66A00CFC05A5A600 /* HomeMenu.swift in Sources */,
+				F147FEC6200121EB612830D3 /* HomeModel.swift in Sources */,
+				25103BF86016CBD63992AB72 /* HomeParts.swift in Sources */,
+				C00655DA4ECE87FDD1C66F3E /* HomeScreen.swift in Sources */,
+				F6525C016FBC07E9B9BEA61F /* ImagePipeline.swift in Sources */,
+				BA8AEE6E88E1807CE843A66E /* LotDisplay.swift in Sources */,
+				AC778A2F10C1ACD06FC42539 /* LotTile.swift in Sources */,
+				42167AD4BE428B9912339BC9 /* LotTitle.swift in Sources */,
+				BF9E250F262198A4812AE0DF /* LoyfusAPI.swift in Sources */,
+				96662551F8EB1A7D5D5FB784 /* LoyfusApp.swift in Sources */,
+				CBCC050F26C8D8C71E4BD635 /* Models.swift in Sources */,
+				E080A2738F1B5BEF06AEB115 /* PhotoBadges.swift in Sources */,
+				403DF2D6657E21BE5D4C5626 /* PhotoPlate.swift in Sources */,
+				58840BAE7E6CC254941EF5A1 /* RootView.swift in Sources */,
+				98D89A7470C4464E2271C3D4 /* Router.swift in Sources */,
+				70CEB4AEFF6F9DD128BCDEFC /* SavedGroups.swift in Sources */,
+				533F4F73AC0E792C713F7373 /* SavedScreen.swift in Sources */,
+				A22E3A967F6CABF0F89BE5C1 /* SettingsScreen.swift in Sources */,
+				B49183472AD85437F873DE7D /* StateViews.swift in Sources */,
+				E9A52751E86D3C98F1F0AF68 /* SwipeBack.swift in Sources */,
+				38E118A2F264E1F8D6D0194B /* Theme.swift in Sources */,
+				D736FBF4584E112D68D0835D /* Toast.swift in Sources */,
+				1F5BEA56FA7E268B18EC8C2E /* Typography.swift in Sources */,
+				1B0D5F823039C93DCE4C9FF6 /* Wordmark.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62ADD3C66FA0839B3609852E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC72F3775C8D77F78DE6899D /* Loyfus */;
+			targetProxy = 2727126C8FB7190B93FBAF2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		335C00D9A4D5A742D2A95CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.loyfus.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loyfus.app/Loyfus";
+			};
+			name = Release;
+		};
+		34DFE43C52B056F2AD4E13D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Loyfus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.loyfus;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CB8D2874501CAEDA0A6015D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.loyfus.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Loyfus.app/Loyfus";
+			};
+			name = Debug;
+		};
+		6FE052FB5AE320C0320F50D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		73ADA3DBA96F2DC73734CC3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Loyfus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.loyfus;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F52331FE6A7486FDD8642D39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2051FE854FEB3E8CEAB65EFE /* Build configuration list for PBXNativeTarget "Loyfus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34DFE43C52B056F2AD4E13D8 /* Debug */,
+				73ADA3DBA96F2DC73734CC3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C472D2C7C09C837D0B1C60AE /* Build configuration list for PBXProject "Loyfus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE052FB5AE320C0320F50D5 /* Debug */,
+				F52331FE6A7486FDD8642D39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CD498AE159FB341F117C6D58 /* Build configuration list for PBXNativeTarget "LoyfusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CB8D2874501CAEDA0A6015D /* Debug */,
+				335C00D9A4D5A742D2A95CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33356716A86AF97B30C3EFD8 /* Project object */;
+}

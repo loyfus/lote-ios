@@ -1,0 +1,10 @@
+# Build
+build/
+DerivedData/
+Pods/
+*.xcuserstate
+xcuserdata/
+Loyfus.xcodeproj/xcuserdata/
+
+# macOS
+.DS_Store
