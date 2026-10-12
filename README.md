@@ -121,7 +121,7 @@ xcrun simctl launch booted br.com.lote
 
 ```bash
 xcodebuild test -project Lote.xcodeproj -scheme Lote \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' CODE_SIGNING_ALLOWED=NO
+  -destination 'platform=iOS Simulator,name=<um iPhone ou iPad instalado>' CODE_SIGNING_ALLOWED=NO
 ```
 
 **54 testes, 0 falhas.** Formatação (26), exibição de lote (22) e limpeza de título (6) — as

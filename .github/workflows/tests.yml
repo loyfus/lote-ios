@@ -25,10 +25,29 @@ jobs:
       - name: Run tests
         run: |
           set -o pipefail
+
+          # Fixar um nome de simulador ('iPhone 17') quebra quando a imagem do
+          # runner muda o conjunto de dispositivos: o xcodebuild falha com
+          # codigo 70 sem nem compilar. Descobrimos o que existe de fato.
+          UDID="$(xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          devices = json.load(sys.stdin)['devices']
+          for runtime in sorted(devices, reverse=True):
+              for device in devices[runtime]:
+                  if device.get('isAvailable') and device['name'].startswith(('iPhone', 'iPad')):
+                      print(device['udid'])
+                      raise SystemExit
+          ")"
+          if [ -z "$UDID" ]; then
+            echo '::error::nenhum simulador iOS disponivel nesta runner'
+            exit 1
+          fi
+          echo "Simulador escolhido: $UDID"
+
           xcodebuild test \
             -project Lote.xcodeproj \
             -scheme Lote \
-            -destination 'platform=iOS Simulator,name=iPhone 17' \
+            -destination "platform=iOS Simulator,id=$UDID" \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO
 
