@@ -81,9 +81,11 @@ targets:
           - InterTight-Bold.ttf
         NSAppTransportSecurity:
           NSAllowsLocalNetworking: true
-        # On a physical device the catalogue is served from a machine on the local
-        # network (AppConfig.apiBaseURL); iOS asks the reader once, with this text.
-        NSLocalNetworkUsageDescription: O Lote busca o catálogo de leilões em um servidor na sua rede local.
+        # The catalogue is served over HTTPS through a Cloudflare Tunnel, so the
+        # app does not touch the LAN. These two keys stay for the documented local
+        # development path (AppConfig.apiBaseURL pointed at a machine on the LAN):
+        # without the description iOS would show an empty prompt in that case.
+        NSLocalNetworkUsageDescription: O Lote busca o catálogo de leilões em um servidor na sua rede local durante o desenvolvimento.
 
   LoteTests:
     type: bundle.unit-test
