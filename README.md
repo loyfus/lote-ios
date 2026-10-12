@@ -18,6 +18,14 @@
 
 ---
 
+> **Contexto.** Projeto de estudo — não está em produção e não é um app publicado.
+> O que existe aqui é o trabalho de produto: um design system próprio, zero dependência
+> externa, e um contrato de dados versionado que o cliente Android consome sem ver o
+> código daqui.
+>
+> O backend que serve o catálogo é privado, então **o app não roda num clone limpo** —
+> os testes, sim: são 54 e rodam em CI sem nenhuma dependência externa.
+
 ## O app
 
 Lote de leilão no Brasil tem um problema antigo: o preço está espalhado por dezenas de
