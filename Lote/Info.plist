@@ -41,7 +41,7 @@
 		<true/>
 	</dict>
 	<key>NSLocalNetworkUsageDescription</key>
-	<string>O Lote busca o catálogo de leilões em um servidor na sua rede local.</string>
+	<string>O Lote busca o catálogo de leilões em um servidor na sua rede local durante o desenvolvimento.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Bricolage-Regular.ttf</string>

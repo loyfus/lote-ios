@@ -2,10 +2,12 @@ import Foundation
 import Observation
 
 enum AppConfig {
-    // The simulator reaches the Mac at 127.0.0.1. A physical device cannot: there,
-    // 127.0.0.1 is the phone itself, so it has to reach the Mac over the LAN --
-    // point this at http://<ip-do-mac>:8080 before building onto a device.
-    static let apiBaseURL = "http://127.0.0.1:8080"
+    // The API runs behind a Cloudflare Tunnel, so the same URL works on the
+    // simulator and on a device, with no LAN address to keep in sync.
+    //
+    // To develop against a local API instead, swap this for
+    // http://127.0.0.1:8080 (simulator) or http://<ip-do-mac>:8080 (device).
+    static let apiBaseURL = "https://lote.loyfus.com.br"
 }
 
 enum DeviceIdentity {

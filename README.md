@@ -98,9 +98,13 @@ negócio.
 
 ## Rodar
 
-A base da API está em `AppConfig.apiBaseURL`. O simulador alcança a máquina em
-`127.0.0.1:8080`; para um **dispositivo físico**, aponte para o IP do Mac na rede — `127.0.0.1`
-lá é o próprio celular.
+A base da API está em `AppConfig.apiBaseURL` e aponta para
+`https://lote.loyfus.com.br` — a API do catálogo, publicada por um Cloudflare Tunnel.
+É a mesma URL no simulador e no dispositivo físico, então não há IP de rede local
+para manter em dia.
+
+Para desenvolver contra uma API local, troque a constante por
+`http://127.0.0.1:8080` (simulador) ou `http://<ip-do-mac>:8080` (dispositivo).
 
 ```bash
 xcodegen generate
